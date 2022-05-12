@@ -126,7 +126,7 @@ export class Segment extends MyDisplay {
   protected _resize(): void {
     super._resize();
 
-    let itemW = 15 * Util.instance.mix(1, 3, this._noise);
+    let itemW = 15 * Util.instance.mix(1, 2, this._noise);
     let itemH = itemW;
     if(this._inputType == 'range' || this._inputType == 'text' || this._inputType == 'date') {
       itemW = Func.instance.val(50, Func.instance.sw() * 0.06);

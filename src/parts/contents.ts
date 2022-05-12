@@ -66,7 +66,7 @@ export class Contents extends MyDisplay {
     const my = Mouse.instance.y;
 
     // 毎フレームセグメントを追加
-    if(Mouse.instance.dist > 5 || (Conf.instance.IS_SP && Mouse.instance.isDown)) {
+    if(Mouse.instance.dist > 3 || (Conf.instance.IS_SP && Mouse.instance.isDown)) {
       this._addSegment();
     }
 
